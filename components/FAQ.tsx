@@ -35,7 +35,12 @@ export default function FAQ() {
     {
       id: 'liquidity',
       q: 'Is liquidity locked?',
-      a: 'Liquidity state is announced by the team post-launch (placeholder: locked/burned).',
+      a: (
+        <span>
+          Yes — liquidity is locked on-chain. Additionally, the core team has locked an extra 15% of the
+          supply for 6 months to strengthen long-term stability.
+        </span>
+      ),
     },
     {
       id: 'solscan',
@@ -111,4 +116,3 @@ export default function FAQ() {
     </div>
   )
 }
-
