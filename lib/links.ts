@@ -23,7 +23,7 @@ export function getLinks(): Links {
     dexscreenerPair: `https://dexscreener.com/solana/${pair}`,
     dexscreenerToken: `https://dexscreener.com/solana/${mint}`,
     solscan: `https://solscan.io/token/${mint}`,
-    x: 'https://x.com/joblesscoin',
-    telegram: 'https://t.me/jobless',
+    x: 'https://x.com/jobless_CTO',
+    telegram: 'https://t.co/192X6jRg7S',
   }
 }
