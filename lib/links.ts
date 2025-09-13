@@ -7,6 +7,7 @@ export type Links = {
   solscan: string
   x: string
   telegram: string
+  xCommunity: string
 }
 
 /**
@@ -25,5 +26,6 @@ export function getLinks(): Links {
     solscan: `https://solscan.io/token/${mint}`,
     x: 'https://x.com/jobless_CTO',
     telegram: 'https://t.co/192X6jRg7S',
+    xCommunity: 'https://x.com/i/communities/1963659733547528200',
   }
 }

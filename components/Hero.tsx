@@ -108,35 +108,44 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-6 flex items-center gap-4 text-sm text-white/80">
-          <a
-            href={links.x}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="$JOBLESS on X"
-            className="hover:text-white"
-          >
-            X (Twitter)
-          </a>
-          <a
-            href={links.telegram}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="$JOBLESS on Telegram"
-            className="hover:text-white"
-          >
-            Telegram
-          </a>
-          <a
-            href={links.solscan}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="View token on Solscan"
-            className="hover:text-white"
-          >
-            Solscan
-          </a>
-        </div>
+          <div className="mt-6 flex items-center gap-4 text-sm text-white/80">
+            <a
+              href={links.x}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="$JOBLESS on X"
+              className="hover:text-white"
+            >
+              X (Twitter)
+            </a>
+            <a
+              href={links.telegram}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="$JOBLESS on Telegram"
+              className="hover:text-white"
+            >
+              Telegram
+            </a>
+            <a
+              href={links.solscan}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="View token on Solscan"
+              className="hover:text-white"
+            >
+              Solscan
+            </a>
+            <a
+              href={links.xCommunity}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Memes"
+              className="font-semibold text-blue-400 hover:text-white animate-pulse"
+            >
+              Memes
+            </a>
+          </div>
       </motion.div>
     </>
   )

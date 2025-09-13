@@ -23,14 +23,14 @@ export default function Chart() {
       <div className="relative w-full h-[520px] sm:h-[560px] md:h-0 md:pb-[56.25%]">
         <iframe
           title="$JOBLESS on Dexscreener"
-          src={`${links.dexscreenerPair}?embed=1&theme=dark`}
+          src={`${links.dexscreenerPair}?embed=1&theme=dark&tab=chart`}
           className="absolute inset-0 h-full w-full rounded-2xl border border-white/10"
           loading="lazy"
         />
       </div>
       <div className="mt-3 text-right text-sm">
         <a
-          href={links.dexscreenerPair}
+          href={`${links.dexscreenerPair}?tab=chart`}
           target="_blank"
           rel="noreferrer noopener"
           className="text-white/80 hover:text-white inline-flex items-center gap-1"
