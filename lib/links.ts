@@ -26,6 +26,7 @@ export function getLinks(): Links {
     solscan: `https://solscan.io/token/${mint}`,
     x: 'https://x.com/jobless_CTO',
     telegram: 'https://t.co/192X6jRg7S',
-    xCommunity: 'https://x.com/i/communities/1963659733547528200',
+    // Deep-link to the Media tab of the X Community
+    xCommunity: 'https://x.com/i/communities/1963659733547528200/media',
   }
 }

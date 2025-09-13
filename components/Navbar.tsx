@@ -1,9 +1,29 @@
-import Link from 'next/link'
+"use client"
+import Image from 'next/image'
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60">
-      <div className="section flex h-14 items-center justify-end">
+      <div className="section flex h-14 items-center justify-between">
+        {/* Home icon (scroll to top) */}
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }}
+          className="inline-flex items-center gap-2 text-white/90 hover:text-white focus-visible:text-white"
+          aria-label="Go to top"
+        >
+          <Image
+            src="/coin.png"
+            alt="Home"
+            width={28}
+            height={28}
+            className="rounded-sm"
+            priority
+          />
+        </a>
         <nav aria-label="Primary">
           <ul className="flex items-center gap-4 text-sm text-white/80">
             <li>

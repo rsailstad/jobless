@@ -9,9 +9,21 @@ type NewsItem = {
 }
 
 const news: NewsItem[] = [
-  { date: '2025-09-13', title: 'jobless launches on pump.fun', href: '#' },
-  { date: '2025-09-13', title: 'dexscreener pair live', href: '#' },
-  { date: '2025-09-13', title: 'community telegram opened', href: '#' },
+  {
+    date: '2025-09-12',
+    title: '142,083,059 $JOBLESS LOCKED on-chain via @streamflow_fi!',
+    href: 'https://x.com/jobless_CTO/status/1966236611269529768',
+  },
+  {
+    date: '2025-09-07',
+    title: 'The $JOBLESS Story — From the ashes to glory',
+    href: 'https://x.com/valen_mamondez/status/1964869445563936985',
+  },
+  {
+    date: '2025-09-05',
+    title: '$JOBLESS IS NOW 100% COMMUNITY OWNED',
+    href: 'https://x.com/valen_mamondez/status/1964022258877317331',
+  },
 ]
 
 export default function News() {
@@ -61,4 +73,3 @@ export default function News() {
     </div>
   )
 }
-
