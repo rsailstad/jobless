@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base dark gradient background and subtle dot noise overlay */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-neutral-950 text-neutral-100 antialiased;
+  background-image:
+    radial-gradient(1200px 800px at 20% 0%, rgba(120,119,198,0.12), transparent 60%),
+    radial-gradient(1200px 800px at 80% 20%, rgba(56,189,248,0.10), transparent 60%),
+    radial-gradient(800px 600px at 50% 100%, rgba(250,204,21,0.06), transparent 60%),
+    radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: auto, auto, auto, 3px 3px;
+}
+
+/* Card base styles */
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-soft;
+}
+
+.chip {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/90;
+}
+
+.button-base {
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3 font-semibold tracking-wide focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-0; 
+}
+
+.button-primary {
+  @apply button-base bg-white text-black hover:bg-neutral-200;
+}
+
+.button-secondary {
+  @apply button-base border border-white/10 bg-transparent text-white hover:bg-white/10;
+}
+
+/* Section heading animation helper spacing */
+.section {
+  @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-title {
+  @apply mb-6 inline-flex items-center gap-2 text-xl font-bold tracking-wide text-white/90;
+}
+
