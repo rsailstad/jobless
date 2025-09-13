@@ -51,10 +51,10 @@ export default function Hero() {
           <div className="absolute inset-0 flex justify-end">
             <div className="h-full w-2/3 sm:w-1/2 md:w-1/3 ml-auto flex items-center justify-end p-4 sm:p-6 md:p-8 text-right">
               <div>
-                <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight lowercase text-white">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight lowercase text-white">
                   $jobless
                 </h1>
-                <p className="mt-3 sm:mt-4 text-white/90 lowercase max-w-[36ch]">
+                <p className="mt-3 sm:mt-4 md:text-lg lg:text-xl text-white/90 lowercase max-w-[36ch]">
                   work is temporary, bags are forever.  not broke, pre-rich
                 </p>
               </div>
