@@ -22,8 +22,12 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#roadmap" className="hover:text-white focus-visible:text-white" aria-label="Jump to Roadmap">
-                Roadmap
+              <a
+                href="#news"
+                className="hover:text-white focus-visible:text-white font-semibold text-white animate-pulse"
+                aria-label="Jump to News"
+              >
+                News
               </a>
             </li>
             <li>
