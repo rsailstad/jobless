@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image'
 
 export default function Navbar() {
   return (
@@ -15,14 +14,12 @@ export default function Navbar() {
           className="inline-flex items-center gap-2 text-white/90 hover:text-white focus-visible:text-white"
           aria-label="Go to top"
         >
-          <Image
-            src="/coin.png"
-            alt="Home"
-            width={28}
-            height={28}
-            className="rounded-sm"
-            priority
-          />
+          <span
+            className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/30 text-white/90 font-semibold hover:border-white"
+            aria-hidden
+          >
+            $
+          </span>
         </a>
         <nav aria-label="Primary">
           <ul className="flex items-center gap-4 text-sm text-white/80">
