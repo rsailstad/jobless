@@ -25,39 +25,38 @@ export default function Hero() {
   }
 
   return (
-    <section className="section py-16 sm:py-24">
-      {/* Full-width banner with right-side overlay */}
+    <>
+      {/* Full-width banner with right-side overlay (bleeds to viewport edges) */}
       <motion.div
+        className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen"
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="card overflow-hidden">
-          <div className="relative w-full aspect-[3/1]">
-            <Image
-              src="/joblessbanner.jpeg"
-              alt="$JOBLESS banner art"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-            {/* Subtle gradient on the right for readability */}
-            <div
-              className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-black/50 to-transparent"
-              aria-hidden
-            />
-            {/* Overlay content on the right third */}
-            <div className="absolute inset-0 flex justify-end">
-              <div className="h-full w-full sm:w-2/3 md:w-1/3 flex items-center p-4 sm:p-6 md:p-8">
-                <div>
-                  <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight lowercase text-white">
-                    $jobless
-                  </h1>
-                  <p className="mt-3 sm:mt-4 text-white/90 lowercase max-w-[36ch]">
-                    work is temporary, bags are forever.  not broke, pre-rich
-                  </p>
-                </div>
+        <div className="relative w-full aspect-[3/1]">
+          <Image
+            src="/joblessbanner.jpeg"
+            alt="$JOBLESS banner art"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          {/* Subtle gradient on the right for readability */}
+          <div
+            className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-black/50 to-transparent"
+            aria-hidden
+          />
+          {/* Overlay content on the right third */}
+          <div className="absolute inset-0 flex justify-end">
+            <div className="h-full w-2/3 sm:w-1/2 md:w-1/3 ml-auto flex items-center justify-end p-4 sm:p-6 md:p-8 text-right">
+              <div>
+                <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight lowercase text-white">
+                  $jobless
+                </h1>
+                <p className="mt-3 sm:mt-4 text-white/90 lowercase max-w-[36ch]">
+                  work is temporary, bags are forever.  not broke, pre-rich
+                </p>
               </div>
             </div>
           </div>
@@ -65,7 +64,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Calls-to-action and links below the banner */}
-      <motion.div initial="hidden" animate="show" variants={fadeUp} className="mt-8">
+      <motion.div initial="hidden" animate="show" variants={fadeUp} className="section py-8 sm:py-12">
         <div className="chip mb-4" aria-hidden>
           <Sparkles className="h-4 w-4" />
           <span>Born on Pump.fun • Powered by Solana</span>
@@ -139,6 +138,6 @@ export default function Hero() {
           </a>
         </div>
       </motion.div>
-    </section>
+    </>
   )
 }
