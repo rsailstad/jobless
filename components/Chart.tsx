@@ -19,7 +19,8 @@ export default function Chart() {
         Live Chart
       </motion.h2>
 
-      <div className="relative w-full pb-[56.25%]">
+      {/* Taller on mobile for readability; use 16:9 from md+ */}
+      <div className="relative w-full h-[520px] sm:h-[560px] md:h-0 md:pb-[56.25%]">
         <iframe
           title="$JOBLESS on Dexscreener"
           src={`${links.dexscreenerPair}?embed=1&theme=dark`}
@@ -41,4 +42,3 @@ export default function Chart() {
     </div>
   )
 }
-
