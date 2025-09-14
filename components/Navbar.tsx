@@ -24,6 +24,11 @@ export default function Navbar() {
         <nav aria-label="Primary">
           <ul className="flex items-center gap-4 text-sm text-white/80">
             <li>
+              <a href="/games" className="hover:text-white focus-visible:text-white" aria-label="Open Games page">
+                Games
+              </a>
+            </li>
+            <li>
               <a href="#chart" className="hover:text-white focus-visible:text-white" aria-label="Jump to Live Chart">
                 Chart
               </a>
