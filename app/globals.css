@@ -9,21 +9,36 @@ html {
 
 body {
   @apply bg-neutral-950 text-neutral-100 antialiased;
+  /* Theme variables: greys base, magenta + neon blue accents */
+  --bg: #0b0b10;
+  --text: #e6e6eb;
+  --muted: #b7b7c2;
+  --magenta: #ff007a; /* vibrant magenta */
+  --accent: #00e5ff; /* neon blue */
+  --border: rgba(0, 229, 255, 0.16);
+  --surface: rgba(255, 0, 122, 0.05);
+
+  background-color: var(--bg);
   background-image:
-    radial-gradient(1200px 800px at 20% 0%, rgba(120,119,198,0.12), transparent 60%),
-    radial-gradient(1200px 800px at 80% 20%, rgba(56,189,248,0.10), transparent 60%),
-    radial-gradient(800px 600px at 50% 100%, rgba(250,204,21,0.06), transparent 60%),
+    radial-gradient(1200px 800px at 12% 0%, rgba(255, 0, 122, 0.14), transparent 60%),
+    radial-gradient(1200px 800px at 85% 15%, rgba(0, 229, 255, 0.12), transparent 60%),
+    radial-gradient(1000px 700px at 50% 100%, rgba(148, 163, 184, 0.06), transparent 60%),
     radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
   background-size: auto, auto, auto, 3px 3px;
 }
 
 /* Card base styles */
 .card {
-  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-soft;
+  @apply rounded-2xl border backdrop-blur-sm shadow-soft;
+  border-color: var(--border);
+  background-color: color-mix(in oklab, var(--surface) 50%, transparent);
 }
 
 .chip {
-  @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/90;
+  @apply inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs;
+  border-color: var(--border);
+  background-color: color-mix(in oklab, var(--surface) 60%, transparent);
+  color: color-mix(in oklab, var(--text) 88%, white 12%);
 }
 
 .button-base {
@@ -31,11 +46,19 @@ body {
 }
 
 .button-primary {
-  @apply button-base bg-white text-black hover:bg-neutral-200;
+  @apply button-base text-neutral-950;
+  background-image: linear-gradient(135deg, var(--magenta) 0%, var(--accent) 100%);
+  box-shadow: 0 6px 24px rgba(0,229,255,0.22);
 }
+.button-primary:hover { filter: brightness(1.05); }
 
 .button-secondary {
-  @apply button-base border border-white/10 bg-transparent text-white hover:bg-white/10;
+  @apply button-base border bg-transparent;
+  border-color: var(--border);
+  color: var(--text);
+}
+.button-secondary:hover {
+  background-color: rgba(0,229,255,0.08);
 }
 
 /* Section heading animation helper spacing */
@@ -44,6 +67,6 @@ body {
 }
 
 .section-title {
-  @apply mb-6 inline-flex items-center gap-2 text-xl font-bold tracking-wide text-white/90;
+  @apply mb-6 inline-flex items-center gap-2 text-xl font-bold tracking-wide;
+  color: color-mix(in oklab, var(--text) 92%, white 8%);
 }
-
