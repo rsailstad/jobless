@@ -70,3 +70,47 @@ body {
   @apply mb-6 inline-flex items-center gap-2 text-xl font-bold tracking-wide;
   color: color-mix(in oklab, var(--text) 92%, white 8%);
 }
+
+/* Colorful section delineation */
+main > section.section {
+  position: relative;
+}
+
+/* Gradient divider line above each section (except the first) */
+main > section.section:not(:first-of-type)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--magenta) 20%,
+    var(--accent) 50%,
+    var(--magenta) 80%,
+    transparent 100%
+  );
+  opacity: 0.7;
+}
+
+/* Subtle alternating glow per section for visual separation */
+main > section.section:nth-of-type(odd) {
+  background-image: radial-gradient(700px 220px at 50% 0%, rgba(255, 0, 122, 0.06), transparent 70%);
+}
+main > section.section:nth-of-type(even) {
+  background-image: radial-gradient(700px 220px at 50% 0%, rgba(0, 229, 255, 0.06), transparent 70%);
+}
+
+/* Reusable gradient divider background */
+.divider-gradient {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--magenta) 20%,
+    var(--accent) 50%,
+    var(--magenta) 80%,
+    transparent 100%
+  );
+}

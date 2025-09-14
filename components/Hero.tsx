@@ -34,6 +34,15 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <div className="relative w-full aspect-[3/1]">
+          {/* Top and bottom gradient dividers matching section separators */}
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-0.5 divider-gradient opacity-80 z-10"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 divider-gradient opacity-80 z-10"
+            aria-hidden
+          />
           <Image
             src="/joblessbanner.jpeg"
             alt="$JOBLESS banner art"
