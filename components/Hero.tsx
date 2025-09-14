@@ -60,10 +60,10 @@ export default function Hero() {
           <div className="absolute inset-0 flex justify-end">
             <div className="h-full w-2/3 sm:w-1/2 md:w-1/3 ml-auto flex items-center justify-end p-4 sm:p-6 md:p-8 text-right">
               <div>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight lowercase text-white">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight lowercase text-white">
                   $jobless
                 </h1>
-                <p className="mt-3 sm:mt-4 md:text-lg lg:text-xl text-white/90 lowercase max-w-[36ch]">
+                <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-white/90 lowercase max-w-[36ch]">
                   work is temporary, bags are forever.  not broke, pre-rich
                 </p>
               </div>
@@ -118,12 +118,12 @@ export default function Hero() {
           <span>Born on Pump.fun • Powered by Solana</span>
         </div>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2 justify-center text-center">
           <a
             href={links.pumpfun}
             target="_blank"
             rel="noreferrer noopener"
-            className="button-primary"
+            className="button-primary px-3 py-2 text-sm sm:px-5 sm:py-3 whitespace-nowrap"
             aria-label="Buy on Pump.fun"
           >
             Buy on Pump.fun <ExternalLink className="h-4 w-4" />
@@ -132,7 +132,7 @@ export default function Hero() {
             href={links.dexscreenerPair}
             target="_blank"
             rel="noreferrer noopener"
-            className="button-secondary"
+            className="button-secondary px-3 py-2 text-sm sm:px-5 sm:py-3 whitespace-nowrap"
             aria-label="View on Dexscreener"
           >
             View on Dexscreener <ExternalLink className="h-4 w-4" />
