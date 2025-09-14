@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        ticker: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        ticker: 'ticker 20s linear infinite',
+      },
       colors: {
         brand: {
           50: '#f5f7ff',
@@ -30,4 +39,3 @@ const config: Config = {
 }
 
 export default config
-

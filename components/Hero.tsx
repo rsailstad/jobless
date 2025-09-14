@@ -72,6 +72,45 @@ export default function Hero() {
         </div>
       </motion.div>
 
+      {/* Scrolling ticker announcement just below the banner */}
+      <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen">
+        <div className="relative overflow-hidden bg-[rgba(0,229,255,0.08)] group">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-0.5 divider-gradient opacity-80" aria-hidden />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 divider-gradient opacity-80" aria-hidden />
+          <div className="flex whitespace-nowrap animate-ticker [animation-play-state:running] group-hover:[animation-play-state:paused]">
+            <a
+              href="https://x.com/jobless_CTO/status/1967143345827852406"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="px-6 py-2 font-semibold tracking-wide text-[var(--text)] hover:text-white"
+              aria-label="Open announcement: MAJOR $JOBLESS CONTEST ANNOUNCEMENT!"
+            >
+              MAJOR $JOBLESS CONTEST ANNOUNCEMENT!
+            </a>
+            <span className="px-6 text-white/40">•</span>
+            <a
+              href="https://x.com/jobless_CTO/status/1967143345827852406"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="px-6 py-2 font-semibold tracking-wide text-[var(--text)] hover:text-white"
+              aria-label="Open announcement: MAJOR $JOBLESS CONTEST ANNOUNCEMENT!"
+            >
+              MAJOR $JOBLESS CONTEST ANNOUNCEMENT!
+            </a>
+            <span className="px-6 text-white/40">•</span>
+            <a
+              href="https://x.com/jobless_CTO/status/1967143345827852406"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="px-6 py-2 font-semibold tracking-wide text-[var(--text)] hover:text-white"
+              aria-label="Open announcement: MAJOR $JOBLESS CONTEST ANNOUNCEMENT!"
+            >
+              MAJOR $JOBLESS CONTEST ANNOUNCEMENT!
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Calls-to-action and links below the banner */}
       <motion.div initial="hidden" animate="show" variants={fadeUp} className="section py-8 sm:py-12">
         <div className="chip mb-4" aria-hidden>
