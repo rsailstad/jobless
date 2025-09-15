@@ -38,7 +38,7 @@ export default function HowToBuy() {
     {
       title: 'Buy $JOBLESS',
       body:
-        'Buy $JOBLESS using SOL on Pump.fun. There are no taxes, and you don’t need to set custom slippage. If you’re out of SOL, you can purchase directly in Phantom.',
+        'Buy $JOBLESS using SOL on Pump.fun. You don’t need to set custom slippage. If you’re out of SOL, you can purchase directly in Phantom.',
       cta: 'Buy Now',
       href: links.pumpfun,
     },
