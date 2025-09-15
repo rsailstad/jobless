@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Chart from '@/components/Chart'
+import HowToBuy from '@/components/HowToBuy'
 import Tokenomics from '@/components/Tokenomics'
 import News from '@/components/News'
 import FAQ from '@/components/FAQ'
@@ -11,6 +12,7 @@ export default function Page() {
     <main>
       <Navbar />
       <Hero />
+      <HowToBuy />
       <section id="chart" className="section py-16 sm:py-24">
         <Chart />
       </section>

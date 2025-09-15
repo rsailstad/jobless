@@ -1,6 +1,7 @@
 "use client"
 
 export default function Navbar() {
+  const SHOW_GAMES = false
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60">
       <div className="section flex h-14 items-center justify-between">
@@ -23,11 +24,13 @@ export default function Navbar() {
         </a>
         <nav aria-label="Primary">
           <ul className="flex items-center gap-4 text-sm text-white/80">
-            <li>
-              <a href="/games" className="hover:text-white focus-visible:text-white" aria-label="Open Games page">
-                Games
-              </a>
-            </li>
+            {SHOW_GAMES && (
+              <li>
+                <a href="/games" className="hover:text-white focus-visible:text-white" aria-label="Open Games page">
+                  Games
+                </a>
+              </li>
+            )}
             <li>
               <a href="#chart" className="hover:text-white focus-visible:text-white" aria-label="Jump to Live Chart">
                 Chart

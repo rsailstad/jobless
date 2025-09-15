@@ -188,10 +188,10 @@ export default function Hero() {
               href={links.xCommunity}
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Memes"
+              aria-label="Community"
               className="font-semibold text-blue-400 hover:text-white animate-pulse"
             >
-              Memes
+              Community
             </a>
           </div>
       </motion.div>
