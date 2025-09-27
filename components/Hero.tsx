@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react'
-import Image from 'next/image'
 import { Copy, Check, Sparkles, ExternalLink } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { getLinks } from '@/lib/links'
@@ -43,14 +42,19 @@ export default function Hero() {
             className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 divider-gradient opacity-80 z-10"
             aria-hidden
           />
-          <Image
-            src="/joblessbanner.jpeg"
-            alt="$JOBLESS banner art"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
+          <video
+            className="absolute inset-0 h-full w-full object-cover"
+            src="/joblessbanner.mp4"
+            poster="/joblessbanner.jpeg"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+          >
+            <source src="/joblessbanner.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           {/* Subtle gradient on the right for readability */}
           <div
             className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-black/50 to-transparent"
